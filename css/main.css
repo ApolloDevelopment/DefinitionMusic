@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*::selection {
+  background-color: #dd3939;
+}
+
+body {
+  background-color: black;
+  background-image: url("../images/bg_image.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+/* Header breaking point starts at a window width of 715px */
+#header {
+  color: #f9f9f9;
+  text-align: center;
+  width: 100%;
+  top: 0;
+}
+
+#header ul::selection {
+  background-color: black;
+}
+
+#header ul li::selection {
+  background-color: black;
+}
+
+#header ul li a::selection {
+  background-color: black;
+}
+
+#header ul li h1::selection {
+  background-color: black;
+}
+
+#header h1#title2 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+  display: none;
+}
+
+#header ul:hover {
+  cursor: default;
+}
+
+#header ul li {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Raleway', sans-serif;
+  margin: 12.5px;
+}
+
+#header ul li a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+#header ul li a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#header ul li h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+}
+
+#header ul#nav2 {
+  margin-top: -12.5px;
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+
+#header ul#nav2 li a {
+  color: #f9f9f9;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
+/*#header h5 {
+  font-style: oblique;
+  padding-left: 5px;
+  line-height: 3px;
+}*/
+
+p {
+  color: #f9f9f9;
+}
+
+.selected {
+  color: red;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 2px;
+  padding-right: 4px;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #f9f9f9;
+}
+
+
+
+
+
+/* Dynamic web designing starts here */
+
+@media only screen and (max-width: 736px) {
+  #header {
+    background: #000000b5;
+    padding-bottom: 5px;
+  }
+  #header h1#title2 {
+    display: block;
+    background-color: #000000b5;
+  }
+  #header ul {
+    display: none;
+  }
+  #header ul#nav2 {
+    display: inline-block;
+    align: center;
+  }
+  #header ul#nav2 li a {
+    transition: 0.3s ease;
+  }
+  #header ul#nav2 li a:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  #footer {
+    position: relative;
+  }
+}
